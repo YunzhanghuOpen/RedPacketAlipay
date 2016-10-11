@@ -13,15 +13,15 @@ Pod::Spec.new do |ali|
   ali.homepage         = 'http://yunzhanghu.com'
   ali.license          = { :type => 'MIT', :file => "LICENSE" }
   ali.author           = { 'Mr.Yang' => 'tonggang.yang@yunzhanghu.com' }
-  ali.source           = { :git => 'https://github.com/yunzhanghuOpen/AlipayTest.git', :tag => '15.0.2'}
+  ali.source           = { :git => 'https://github.com/yunzhanghuOpen/AlipayTest.git', :tag => "#{ali.version}"}
 
   ali.platform     = :ios, '6.0'
   ali.requires_arc = true
   ali.vendored_frameworks = 'AlipaySDK.framework'
-  ali.public_header_files = 'AlipaySDK.framework/Headers/**/*.h'
+  ali.public_header_files = 'AlipaySDK.framework/Headers/*.h'
   ali.resources    = 'AlipaySDK.bundle'
   ali.frameworks = 'CoreTelephony', 'SystemConfiguration', 'CoreMotion'
   ali.libraries  = 'z', 'c++'
   ali.documentation_url = 'https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.F4lXPg&treeId=193&articleId=105295&docType=1'
-
+  ali.source_files = 'AlipaySDK.framework/Headers/*.h'
 end
