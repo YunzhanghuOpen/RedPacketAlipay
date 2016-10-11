@@ -1,7 +1,7 @@
 Pod::Spec.new do |ali|
   ali.name             = 'AlipayTest'
-  ali.version          = '1.0.0'
-  ali.summary          = 'Test'
+  ali.version          = '15.0.2'
+  ali.summary          = 'Alipay SDK for iOS.'
   ali.description      = <<-DESC
                        RedpacketSDK, Alipay.
                        * Redpacket
@@ -15,14 +15,14 @@ Pod::Spec.new do |ali|
   ali.author           = { 'Mr.Yang' => 'tonggang.yang@yunzhanghu.com' }
   ali.source           = { :git => 'https://github.com/yunzhanghuOpen/AlipayTest.git', :tag => '1.0.0' }
 
-  ali.platform     = :ios, '7.0'
+  ali.platform     = :ios, '6.0'
   ali.requires_arc = true
-  ali.vendored_libraries = 'Alipay/lib/*.a'
+  ali.vendored_frameworks = 'AlipaySDK.framework'
   ali.source_files = 'Alipay/*.{h,m}'
-  ali.public_header_files = 'Alipay/*.h'
-  ali.resources = ['Alipay/resources/*.bundle']
-  ali.frameworks = 'CoreMotion' 'CoreText' 'CoreTelephony'
-  #ali.resource = “redpacket.bundle"
+  ali.public_header_files = 'AlipaySDK.framework/Headers/**/*.h'
+  ali.resources    = 'AlipaySDK.bundle'
+  ali.frameworks = 'CoreTelephony', 'SystemConfiguration', 'CoreMotion'
+  ali.libraries  = 'z', 'c++'
   ali.documentation_url = 'https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.F4lXPg&treeId=193&articleId=105295&docType=1'
 
 end
