@@ -1,6 +1,17 @@
-###云账户红包SDK cocoapods(iOS)
+# 云账户红包-支付宝静态库
 
-#### [支付宝集成链接]
+###支付宝Lib
+版本号：15.2.1
 
- [支付宝集成链接](https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.UccR9D&treeId=59&articleId=103676&docType=1)
+### 云账户
+官网
+
+文档
+
+联系我们:
+
+客服热线: 400-6565-739
+业务咨询: bd@yunzhanghu.com
+客服 QQ : 4006565739
+技术QQ群: 366135448
 

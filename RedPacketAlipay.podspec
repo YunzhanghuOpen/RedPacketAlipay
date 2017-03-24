@@ -1,6 +1,6 @@
 Pod::Spec.new do |ali|
   ali.name             = 'RedPacketAlipay'
-  ali.version          = '15.0.2'
+  ali.version          = '15.2.1'
   ali.summary          = 'Alipay SDK for iOS.'
   ali.description      = <<-DESC
                        RedpacketSDK, Alipay.
@@ -13,7 +13,7 @@ Pod::Spec.new do |ali|
   ali.homepage         = 'http://yunzhanghu.com'
   ali.license          = { :type => 'MIT', :file => "LICENSE" }
   ali.author           = { 'Mr.Yang' => 'tonggang.yang@yunzhanghu.com' }
-  ali.source           = { :git => 'https://github.com/yunzhanghuOpen/AlipayTest.git', :tag => "#{ali.version}"}
+  ali.source           = { :git => 'git@github.com:YunzhanghuOpen/cocoapods-AlipayLib.git', :tag => "#{ali.version}"}
 
   ali.platform     = :ios, '6.0'
   ali.requires_arc = true
