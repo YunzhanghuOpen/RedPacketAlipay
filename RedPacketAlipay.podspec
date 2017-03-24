@@ -1,6 +1,6 @@
 Pod::Spec.new do |ali|
   ali.name             = 'RedPacketAlipay'
-  ali.version          = '15.2.1'
+  ali.version          = '15.3.3'
   ali.summary          = 'Alipay SDK for iOS.'
   ali.description      = <<-DESC
                        RedpacketSDK, Alipay.
